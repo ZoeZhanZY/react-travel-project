@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // import the entire file of Navbar.css
 import "./Navbar.css";
 //import 'Button' from module Button.js, it's shortened because it's a js file, so we can omit the extension
-import Button from "./Button";
+import Button from "../Button/Button";
 
 // define a function called Navbar which accepts 'props' as its parameter.
 // { brand } is the syntax to destructure 'brand' property from props object.
