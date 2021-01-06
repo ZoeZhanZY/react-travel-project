@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // import the entire file of Navbar.css
 import "./Navbar.css";
 //import 'Button' from module Button.js, it's shortened because it's a js file, so we can omit the extension
-import  Button from "./Button";
+import Button from "./Button";
 
 // define a function called Navbar which accepts 'props' as its parameter.
 // { brand } is the syntax to destructure 'brand' property from props object.
@@ -58,7 +58,7 @@ function Navbar(props) {
       {/* since this is JSX(JAVASCRIPT EXTENSION), it use className instead of class */}
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/#" className="navbar-logo" onClick={closeMobileMenu}>
             {/* {props.brand} is the syntax to destructure/unpack brand property from object props of function Navbar */}
             {props.brand} <i className="fab fa-typo3"></i>
           </Link>
@@ -71,7 +71,7 @@ function Navbar(props) {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/#" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>

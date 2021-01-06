@@ -25,53 +25,53 @@ export default function Footer(props) {
           </form>
         </div>
       </section>
-      <div class="footer-links">
+      <div className="footer-links">
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>About Us</h2>
             <Link to="/sign-up">How it works</Link>
-            <Link to="/">Testimonials</Link>
-            <Link to="/">Careers</Link>
-            <Link to="/">Investors</Link>
-            <Link to="/">Terms of Service</Link>
+            <Link to="/#">Testimonials</Link>
+            <Link to="/#">Careers</Link>
+            <Link to="/#">Investors</Link>
+            <Link to="/#">Terms of Service</Link>
           </div>
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Sponsorships</Link>
+            <Link to="/#">Contact</Link>
+            <Link to="/#">Support</Link>
+            <Link to="/#">Destinations</Link>
+            <Link to="/#">Sponsorships</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Ambassadors</Link>
-            <Link to="/">Agency</Link>
-            <Link to="/">Influencer</Link>
+            <Link to="/#">Submit Video</Link>
+            <Link to="/#">Ambassadors</Link>
+            <Link to="/#">Agency</Link>
+            <Link to="/#">Influencer</Link>
           </div>
-          <div class="footer-link-items">
+          <div className="footer-link-items">
             <h2>Social Media</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <Link to="/#">Instagram</Link>
+            <Link to="/#">Facebook</Link>
+            <Link to="/#">Youtube</Link>
+            <Link to="/#">Twitter</Link>
           </div>
         </div>
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-lo">
-            <Link className="social-logo">
+            <Link className="social-logo" to="/#">
               {props.brand} <i className="fab fa-typo3" />
             </Link>
           </div>
-          <small className="website-rights">{props.brand} 2020</small>
+          <small className="website-rights">{props.brand} &#169; 2020</small>
           <div className="social-icons">
             <Link
               className="social-icon-link facebook"
-              to="/"
+              to="/#"
               target="_blank"
               arial-label="Facebook"
             >
@@ -79,7 +79,7 @@ export default function Footer(props) {
             </Link>
             <Link
               className="social-icon-link twitter"
-              to="/"
+              to="/#"
               target="_blank"
               arial-label="Twitter"
             >
@@ -87,7 +87,7 @@ export default function Footer(props) {
             </Link>
             <Link
               className="social-icon-link youtube"
-              to="/"
+              to="/#"
               target="_blank"
               arial-label="YouTube"
             >
@@ -95,7 +95,7 @@ export default function Footer(props) {
             </Link>
             <Link
               className="social-icon-link instagram"
-              to="/"
+              to="/#"
               target="_blank"
               arial-label="Instagram"
             >
@@ -103,7 +103,7 @@ export default function Footer(props) {
             </Link>
             <Link
               className="social-icon-link linkedin"
-              to="/"
+              to="/#"
               target="_blank"
               arial-label="LinkedIn"
             >

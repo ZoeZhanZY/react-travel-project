@@ -7,19 +7,19 @@ const STYLES = ["btn--primary", "btn--outline"];
 
 const SIZES = ["btn--medium", "btn--large"];
 
-// define a function called Button, which accepts a parameter named props. Props is a React default object 
-// which includes all attributes passed from user. Here we destructured 5 attributes out of it and assigned them to the 5 items below 
+// define a function called Button, which accepts a parameter named props. Props is a React default object
+// which includes all attributes passed from user. Here we destructured 5 attributes out of it and assigned them to the 5 items below
 // (which has the same name as the attribute name before.)
-// the syntax can be shorten as 
+// the syntax can be shorten as
 // const Button = ({ children, type, onClick, buttonStyle, buttonSize})
 const Button = (props) => {
-
   const {
     children,
     type,
     onClick,
     buttonStyle,
-    buttonSize
+    buttonSize,
+    customClassName,
   } = props;
 
   // this const value is limited within the STYLES.
@@ -30,10 +30,9 @@ const Button = (props) => {
   const checkButtonSize = SIZES.includes(buttonStyle) ? buttonSize : SIZES[0];
 
   return (
-     /* TODO - change 'to' */
     <Link to="/sign-up" className="btn-mobile">
       <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        className={`btn ${checkButtonStyle} ${checkButtonSize} ${customClassName}`}
         onClick={onClick}
         type={type}
       >
